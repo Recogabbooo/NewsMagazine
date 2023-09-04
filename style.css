@@ -1,0 +1,73 @@
+*{
+    text-align: center;
+}
+
+
+body{
+    max-width: 550px;
+    margin: 0 auto;
+    font-family: system-ui;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+h1, h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+h2{
+    opacity: .7;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 32px;
+    text-align: justify;
+}
+p{
+    text-align: justify;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+@keyframes show {
+
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    } 
+}
+
+img{
+    view-timeline-name: --image;
+    viewtimeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+
+}
+button .btn-primary{
+    color:black;
+    background-color: lightblue;
+    opacity: 0.8;
+    margin: hidden;
+    overflow: hidden;
+}
+button {
+    background-color: white;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: hidden;
+    overflow: hidden;
+}
